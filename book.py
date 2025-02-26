@@ -77,7 +77,7 @@ def delete_book(book_id):
 def check_password():
     data = request.get_json()
     password = data.get('password')
-    correct_password = "953000"  # รหัสผ่านที่ถูกต้อง
+    correct_password = "953000"  #Correct Password
 
     if password == correct_password:
         return jsonify({"isValid": True})
